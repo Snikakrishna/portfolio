@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Portfolio</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+
+        nav {
+            background-color: #444; /* Darker grey */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Home Section */
+        section#home {
+            text-align: center;
+            padding: 50px 0;
+            background-color: white; /* White background */
+        }
+
+        section#home img {
+            border-radius: 50%;
+            width: 300px;
+            height: auto;
+        }
+
+        /* About Section */
+        section#about {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4; /* Light grey */
+        }
+
+        /* Projects Section */
+        section#projects {
+            padding: 50px;
+            text-align: center;
+            background-color: white; /* White background */
+        }
+
+        .project-grid {
+            display: flex;
+            flex-direction: column; /* Projects stacked one below the other */
+            align-items: center; /* Center the projects */
+        }
+
+        .project {
+            width: 80%;
+            margin: 20px 0;
+            background: #e0e0e0; /* Light grey for project boxes */
+            padding: 20px;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            color: #1e90ff; /* Bright link color */
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        section#contact {
+            padding: 50px;
+            background-color: #f4f4f4; /* Light grey */
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+
+        form div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        form label {
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        form input, form textarea {
+            flex: 2;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #e0e0e0; /* Light grey for input fields */
+            color: #333;
+            border: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Thank You Message */
+        #thank-you {
+            display: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+            }
+
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>SNIKA KRISHNA</h1>
+        <p>Welcome to my portfolio website!</p>
+        <img src="20240829_201934.jpg" alt="Your Photo">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>MCA student proficient in Python, SQL, and Power BI. Equipped with knowledge in Machine learning, Artificial Intelligence and Statistical knowledge and dedicated to leveraging data to drive actionable insights.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1: MOVIE RECOMMENDATION ENGINE</h3>
+                <p>This project implements a content-based movie recommendation engine using Python. The system suggests movies to users based on the similarity of movies' features, such as genres, actors, and directors.</p>
+                <a href="https://github.com/Snikakrishna/Movie-recommendation-engine.git">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2: CHATBOT</h3>
+                <p>This project focuses on the design, implementation, and evaluation of a sophisticated chatbot that utilizes NLP techniques to interpret user queries and generate appropriate responses.</p>
+                <a href="https://github.com/Snikakrishna/AI-Internship.git">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3: SALES FORECASTING</h3>
+                <p>This project develops a predictive model that forecasts sales of products in retail outlets by analyzing key factors such as pricing, store type, and location.</p>
+                <a href="https://github.com/Snikakrishna/sales_forecasting.git">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+        <div id="thank-you">
+            <p>Thank you for your message!</p>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form submission
+
+            // Get form values
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+
+            // Simple validation
+            if (name && email && message) {
+                document.getElementById('thank-you').style.display = 'block';
+                this.style.display = 'none'; // Hide the form after submission
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
