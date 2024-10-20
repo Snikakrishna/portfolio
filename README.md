@@ -48,7 +48,10 @@ How to Clone and Run Locally
 To run this project on your local machine:
 
 Clone the repository:
+
 git clone https://github.com/Snikakrishna/portfolio.git
 Open the index.html file in your web browser.
+
 License
+
 This project is open-source and available under the MIT License.
