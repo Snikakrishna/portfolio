@@ -24,17 +24,17 @@ Contact: A simple form where users can submit their details. The form is non-fun
 Project Structure
 
 ├── index.html  
-# Main HTML file for the website
+                 # Main HTML file for the website
 ├── styles.css   
-# Contains all the styles for the site
+                 # Contains all the styles for the site
 ├── script.js     
-# JavaScript file for form validation and interactivity
+                 # JavaScript file for form validation and interactivity
 ├── images/      
-# Directory containing images
-│   └── Snikasscphoto.jpg
-# Profile photo for the home section
+                 # Directory containing images
+└── https://github.com/Snikakrishna/portfolio/blob/main/20240829_201934.jpg
+                 # Profile photo for the home section
 └── README.md   
-# This README file
+                 # This README file
 
 Technologies Used
 
